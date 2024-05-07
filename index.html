@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Karaoke</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('./images/background.jpg'); /* Background image source */
+            background-size: 100vw 100vh; /* Ensures full coverage */
+            background-position: center;
+            background-repeat: no-repeat; /* Prevents repeating the background */
+            height: 100vh; /* Full height of the viewport */
+            width: 100vw; /* Full width of the viewport */
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            overflow: hidden; /* Hides any overflow */
+        }
+
+        .image-container {
+            display: flex;
+            width: 100%; /* Takes full width of the body */
+            justify-content: space-evenly; /* Center the images inside the container */
+            align-items: center;
+        }
+
+        .image-link {
+            margin: 0 40px; /* Spacing between images */
+            transition: transform 0.3s ease;
+            width: 250px; /* Reduced width from 300px to 200px */
+            height: 250px; /* Reduced height from 300px to 200px */
+        }
+
+        .image-link:hover {
+            transform: scale(1.2); /* Scales up the image a bit on hover */
+        }
+
+        .image-link img {
+            border-radius: 50%; /* Makes the image circular */
+            width: 100%; /* Ensures the image fills the link container */
+            height: 100%; /* Ensures the image fills the link container */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <a href="./pages/songs.php" class="image-link">
+            <img src="./images/songs2.jpg" alt="Shows the song list when clicked">
+        </a>
+        <a href="./pages/dj.php" class="image-link">
+            <img src="./images/dj2.jpg" alt="Shows the dj interface when clicked">
+        </a>
+    </div>
+</body>
+</html>
