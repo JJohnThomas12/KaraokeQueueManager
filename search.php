@@ -1,15 +1,15 @@
 <?php
 include("dbcon.php");
 
-$username ='z2013735';
-$password ='2003Nov04';
+$username ='z#######';
+$password ='*********';
 $searchQuery = '%' . $_POST["name"] . '%';
 $searchOption = $_POST["choice"];
 $searchField =  strtolower($_POST["field"]);
 $searchOrder = $_POST["order"];
 $orderByClause = ""; 
 try {
-    $dsn = "mysql:host=courses;dbname=z2013735";
+    $dsn = "mysql:host=courses;dbname=z#######";
     $pdo = new PDO($dsn, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
