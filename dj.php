@@ -10,10 +10,10 @@
     <?php // Handle Request from songs.php
         if ($_SERVER["REQUEST_METHOD"] == "POST") 
         {
-            $username ='z2013735';
-            $password ='2003Nov04';
+            $username ='z######';
+            $password ='*********';
             try{ 
-                $dsn = "mysql:host=courses;dbname=z2013735";
+                $dsn = "mysql:host=courses;dbname=z######";
                 $pdo = new PDO($dsn, $username, $password);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                 $file_id = $_POST["file_id"];
@@ -56,10 +56,10 @@
             </div>
             <div class ="queue-result-left">
                 <?php // Regular Queue
-                    $username ='z2013735';
-                    $password ='2003Nov04'; 
+                    $username ='z######';
+                    $password ='*********'; 
                     try{ 
-                        $dsn = "mysql:host=courses;dbname=z2013735";
+                        $dsn = "mysql:host=courses;dbname=z######";
                         $pdo = new PDO($dsn, $username, $password);
                         $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                                     
@@ -98,10 +98,10 @@
             <?php // Allows DJ to choose song from either queue
                 if ($_SERVER["REQUEST_METHOD"] == "POST") 
                 {
-                    $username ='z2013735';
-                    $password ='2003Nov04';
+                    $username ='z######';
+                    $password ='*********';
                     try{
-                        $dsn = "mysql:host=courses;dbname=z2013735";
+                        $dsn = "mysql:host=courses;dbname=z######";
                         $pdo = new PDO($dsn, $username, $password);
                         $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                         $queue_id = $_POST["queue_id"]; 
@@ -151,11 +151,11 @@
             </div>
             <div class ="queue-result-right">
                 <?php // Handle the Priority Queue
-                    $username ='z2013735';
-                    $password ='2003Nov04';
+                    $username ='z######';
+                    $password ='*********';
                             
                     try{ 
-                        $dsn = "mysql:host=courses;dbname=z2013735";
+                        $dsn = "mysql:host=courses;dbname=z######";
                         $pdo = new PDO($dsn, $username, $password);
                         $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
                         if ( !empty($_POST["sort_queue"])) 
